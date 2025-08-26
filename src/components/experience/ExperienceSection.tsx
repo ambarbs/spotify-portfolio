@@ -1,10 +1,13 @@
 import ExperienceCard from "./ExperienceCard";
-import { experienceSection } from "../../data/experience";
 import { toExperience } from "../../utils/transform";
+import type { ExperienceRaw } from "../../types";
 
-const EXPERIENCE = toExperience(experienceSection);
-
-export default function ExperienceSection() {
+export default function ExperienceSection({
+  experienceSection,
+}: {
+  experienceSection: ExperienceRaw;
+}) {
+  const EXPERIENCE = toExperience(experienceSection);
   return (
     <section id="experience" className="scroll-mt-20">
       <h2 className="text-xl text-white mb-3">Experience</h2>

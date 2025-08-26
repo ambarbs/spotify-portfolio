@@ -1,18 +1,20 @@
 import { Code } from "lucide-react";
-import { skillsSections } from "../../data/skills";
-import { toSkillTokens } from "../../utils/transform";
+import type { SkillSection } from "../../types";
 import SkillCategoryCard from "./SkillCategoryCard";
 import LevelDots from "./LevelDots";
 import SkillBar from "./SkillBar";
+import { toSkillTokens } from "../../utils/transform";
 
-const SKILL_TOKENS = toSkillTokens(skillsSections);
-
-export default function SkillsSection() {
+export default function SkillsSection({
+  skillsSections,
+}: {
+  skillsSections: SkillSection[];
+}) {
+  const SKILL_TOKENS = toSkillTokens(skillsSections as any);
   return (
     <section id="skills" className="scroll-mt-20 space-y-6">
       <h2 className="text-xl text-white">Skills</h2>
 
-      {/* A) Categories */}
       <div className="grid md:grid-cols-3 gap-4">
         {skillsSections.map((cat) => (
           <SkillCategoryCard
@@ -23,7 +25,6 @@ export default function SkillsSection() {
         ))}
       </div>
 
-      {/* B) Proficiency bars */}
       <div className="grid md:grid-cols-2 gap-4">
         {SKILL_TOKENS.slice(0, 12).map((s) => (
           <div
@@ -42,7 +43,6 @@ export default function SkillsSection() {
         ))}
       </div>
 
-      {/* C) Toolbelt chip cloud */}
       <div className="bg-white/5 rounded-xl p-4 border border-white/10">
         <div className="flex flex-wrap gap-2">
           {SKILL_TOKENS.slice(12).map((s) => (

@@ -1,6 +1,6 @@
-@import "tailwindcss";
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
 
-/* proof CSS is loaded */
-body { background: #0b0b0b; color: #e5e5e5; }
-
-html { scroll-behavior: smooth; }
+/* TEMP: quick proof it's loaded — remove after verifying */
+body { background: #0b0b0b; }
