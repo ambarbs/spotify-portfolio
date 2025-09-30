@@ -1,6 +1,7 @@
-import { Github, Linkedin, Mail } from "lucide-react";
-import type { Profile } from "../../types";
-import Nav from "./Nav";
+import { Github, Linkedin, Mail } from 'lucide-react';
+import { FaNpm } from 'react-icons/fa';
+import type { Profile } from '../../types';
+import Nav from './Nav';
 
 export default function Header({ profile }: { profile: Profile }) {
   return (
@@ -15,21 +16,34 @@ export default function Header({ profile }: { profile: Profile }) {
           <a
             href={profile.github}
             aria-label="GitHub"
-            className="p-2 rounded-full hover:bg-white/10"
+            target="_blank"
+            rel="noreferrer"
+            className="p-2 rounded-full hover:bg-white/10 text-zinc-400 hover:text-white"
           >
             <Github />
           </a>
           <a
+            href={profile.npm}
+            aria-label="NPM"
+            target="_blank"
+            rel="noreferrer"
+            className="p-2 rounded-full hover:bg-white/10 text-zinc-400 hover:text-white"
+          >
+            <FaNpm size={20} />
+          </a>
+          <a
             href={profile.linkedin}
             aria-label="LinkedIn"
-            className="p-2 rounded-full hover:bg-white/10"
+            target="_blank"
+            rel="noreferrer"
+            className="p-2 rounded-full hover:bg-white/10 text-zinc-400 hover:text-white"
           >
             <Linkedin />
           </a>
           <a
             href={`mailto:${profile.email}`}
             aria-label="Email"
-            className="p-2 rounded-full hover:bg-white/10"
+            className="p-2 rounded-full hover:bg-white/10 text-zinc-400 hover:text-white"
           >
             <Mail />
           </a>

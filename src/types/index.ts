@@ -27,6 +27,7 @@ export type Profile = {
   email: string;
   github: string;
   linkedin: string;
+  npm: string;
 };
 
 export type SkillSection = { title: string; text: string };
