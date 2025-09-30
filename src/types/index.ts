@@ -17,6 +17,10 @@ export type ExperienceItem = {
 };
 
 export type SkillToken = { name: string; level: 1 | 2 | 3 | 4 | 5 };
+export interface Skill {
+  name: string;
+  level: number; // allow decimals like 4.5
+}
 
 export type Profile = {
   name: string;
@@ -47,6 +51,7 @@ export type ExperienceRaw = {
 export type Portfolio = {
   profile: Profile;
   skillsSections: SkillSection[];
+  skills: Skill[];
   projects: Project[];
   experience: ExperienceRaw;
 };
