@@ -1,69 +1,74 @@
-# React + TypeScript + Vite
+# Ambar Bose — Senior Frontend Engineer Portfolio
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A personal engineering portfolio built with React, TypeScript, and Vite.
 
-Currently, two official plugins are available:
+This site presents my frontend engineering experience across React, TypeScript, design systems, micro-frontends, API-driven UI, and scalable product architecture.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+Live site: https://ambarbs.github.io/spotify-portfolio/
 
-## Expanding the ESLint configuration
+---
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+## Overview
 
-```js
-export default tseslint.config([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+This portfolio is designed as a senior frontend engineering profile rather than a traditional project gallery.
 
-      // Remove tseslint.configs.recommended and replace with this
-      ...tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      ...tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      ...tseslint.configs.stylisticTypeChecked,
+It highlights:
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+- Production frontend experience across enterprise and product environments
+- React and TypeScript engineering work
+- Design systems and reusable component architecture
+- Micro-frontend and modular frontend experience
+- API-driven UI development using REST, GraphQL, and Node.js patterns
+- Testing, accessibility, refactoring, and delivery quality
+- Selected side projects and experiments
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+---
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+## Tech Stack
 
-export default tseslint.config([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+- React
+- TypeScript
+- Vite
+- Tailwind CSS
+- GitHub Pages
+
+---
+
+## Key Sections
+
+### Engineering Profile
+
+A summary of my core frontend strengths:
+
+- Frontend architecture
+- Design systems
+- Product engineering
+- Integration and platform delivery
+
+### Experience
+
+Selected professional experience across companies including:
+
+- Vitura Health
+- Ampol
+- IAG
+- Suncorp
+- Optus
+- Luxury Escapes
+
+### Technical Skills
+
+Grouped technical strengths across frontend, architecture, integration, testing, and delivery.
+
+### Side Projects / Experiments
+
+Small React projects exploring UI interactions, state management, game logic, and deployment.
+
+---
+
+## Running Locally
+
+Install dependencies:
+
+```bash
+npm install

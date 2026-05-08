@@ -5,6 +5,7 @@ import ExperienceSection from './components/experience/ExperienceSection';
 import ContactSection from './components/contact/ContactSection';
 import { usePortfolio } from './context/PortfolioContext';
 import ProjectsSection from './components/projects/ProjectsSection';
+import EngineeringSummary from './components/EngineeringSummary';
 
 export default function App() {
   const state = usePortfolio();
@@ -22,9 +23,10 @@ export default function App() {
       <Header profile={profile} />
       <main className="max-w-7xl mx-auto px-4 md:px-6 py-8 space-y-16">
         <Hero profile={profile} />
-        <ProjectsSection projects={projects} />
-        <SkillsSection skillsSections={skillsSections} skills={skills} />
+        <EngineeringSummary />
         <ExperienceSection experienceSection={experience} />
+        <SkillsSection skillsSections={skillsSections} skills={skills} />
+        <ProjectsSection projects={projects} />
         <ContactSection profile={profile} />
       </main>
     </div>

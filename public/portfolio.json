@@ -3,7 +3,7 @@
     "name": "Ambar Bose",
     "title": "Senior Front-End Engineer (React • TypeScript)",
     "location": "Sydney, AU",
-    "summary": "Crafting high-performance React apps with a designer’s eye and an engineer’s rigor.",
+    "summary": "Senior Frontend Engineer specialising in React, TypeScript, design systems, micro-frontends, and scalable product architecture.",
     "resumeUrl": "https://ambarbs.github.io/my-resume/",
     "email": "ambar.bs@gmail.com",
     "github": "https://github.com/ambarbs",
@@ -77,6 +77,21 @@
     "header": "Experience",
     "type": "experience",
     "subSections": [
+      {
+        "subSectionTitle": "Vitura",
+        "workTitle": "Senior Frontend Engineer - Contract",
+        "yearsWorked": "Oct 25 - Present",
+        "subSectionTexts": [
+          "Working on design system development and refactoring for web and mobile platforms (React & React Native)",
+          "Auditing and improving existing component libraries for consistency, reusability, accessibility and performance",
+          "Developing and delivering new frontend features alongside design system work, ensuring alignment with existing UI patterns and standards",
+          "Collaborating closely with design and product teams to align Figma designs with implemented, reusable UI components"
+        ],
+        "techStack": {
+          "frontend": "JavaScript, TypeScript, React, React Native, Storybook, HTML5, CSS3, SASS",
+          "backend": "Node.js"
+        }
+      },
       {
         "subSectionTitle": "Ampol",
         "workTitle": "Senior Frontend Engineer - Contract",
