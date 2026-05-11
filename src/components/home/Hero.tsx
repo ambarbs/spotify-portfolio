@@ -1,5 +1,5 @@
-import { Download, Mail, MapPin } from "lucide-react";
-import type { Profile } from "../../types";
+import { ExternalLink, Mail, MapPin } from 'lucide-react';
+import type { Profile } from '../../types';
 
 export default function Hero({ profile }: { profile: Profile }) {
   return (
@@ -13,13 +13,17 @@ export default function Hero({ profile }: { profile: Profile }) {
               <MapPin className="h-3 w-3" /> {profile.location}
             </p>
           </div>
+
           <div className="flex items-center gap-2">
             <a
               href={profile.resumeUrl}
+              target="_blank"
+              rel="noreferrer"
               className="inline-flex items-center gap-2 text-sm px-3 py-2 rounded-full bg-emerald-500 text-black hover:bg-emerald-400"
             >
-              <Download className="h-4 w-4" /> Resume
+              <ExternalLink className="h-4 w-4" /> View Resume
             </a>
+
             <a
               href={`mailto:${profile.email}`}
               className="inline-flex items-center gap-2 text-sm px-3 py-2 rounded-full border border-white/10 hover:bg-white/10"
