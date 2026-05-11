@@ -1,8 +1,8 @@
-import { defineConfig } from "vite";
-import react from "@vitejs/plugin-react";
+import { defineConfig } from 'vite';
+import react from '@vitejs/plugin-react';
 
-// If deploying to https://<user>.github.io/spotify-portfolio/
+// If deploying to https://<user>.github.io/ambar-bose-portfolio/
 export default defineConfig({
-  base: "/spotify-portfolio/", // <-- set to '/' only for user/organization site
+  base: '/ambar-bose-portfolio/', // <-- set to '/' only for user/organization site
   plugins: [react()],
 });
